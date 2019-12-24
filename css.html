@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>fe 16</title>
+        <style>
+            div {
+                outline: 1px dashed red;
+            }
+            .g-holder {
+                display: inline-block;
+                width: 100px;
+                height: 50px;
+                background: lightblue;
+            }
+            .g-position {
+                display: inline-block;
+                height: 600px;
+            }
+            .g-static {
+                position: static;
+            }
+            .g-relative {
+                position: relative;
+            }
+            .g-absolute {
+                position: absolute;
+            }
+            .g-fixed {
+                position: fixed;
+                top: 0;
+                height: 100px;
+                background: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+        display 主要有 3 个值
+            block 独占一行
+            inline 和别人挤成一行, 并且不能设置盒模型
+            inline-block 和别人挤在一行, 但是可以设置盒模型
+        -->
+        <div class="g-block">
+            block
+        </div>
+        <button type="button">add</button>
+        <span>Gua</span>
+        <input type="text"value="">
+        <button type="button">delete</button>
+        <div class="g-inline">
+            inline
+        </div>
+
+        <div class="g-holder">
+        </div>
+        <div class="g-position">
+            <div class="g-static">
+                static
+            </div>
+            <div class="g-relative">
+                relative
+            </div>
+            <div class="g-absolute">
+                absolute
+            </div>
+            <div class="g-fixed">
+                fixed
+            </div>
+            <div class="g-footer">
+                footer
+            </div>
+        </div>
+    </body>
+</html>
